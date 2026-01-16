@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams} from "react-router-dom";
 import { books } from "../data/books";
 
 export default function BookDetails() {
@@ -38,21 +38,21 @@ export default function BookDetails() {
           </p>
 
           {/* CTA */}
-          <Link
-  to={`/checkout/${book.id}`}
+          <a
+  href={`/checkout/${book.id}`}
   state={{ purchaseType: "ebook" }}
   className="block w-full text-center bg-primary hover:bg-primaryHover text-white px-6 py-3 rounded-lg mb-4"
 >
   Buy E-Book
-</Link>
+</a>
 
-<Link
-  to={`/checkout/${book.id}`}
+<a
+  href={`/checkout/${book.id}`}
   state={{ purchaseType: "hardcopy" }}
   className="block w-full text-center border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg"
 >
   Buy Hard Copy
-</Link>
+</a>
 
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function Footer() {
           <p>Sample Book Three</p>
         </div>
         <div>
-          <p className="text-footerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className="text-footerText">Knowledge! The bedrock for Wisdom.</p>
         </div>
       </div>
     </footer>

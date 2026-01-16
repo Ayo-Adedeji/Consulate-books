@@ -35,7 +35,7 @@ export default function Home() {
     <div>
       <h2 className="text-3xl font-semibold mb-4">Consulate Books</h2>
       <h3 className="text-2xl font-semibold mb-4">
-        Public Health Pharmacist(NIG). Business manager, Health and social care professional and An Author
+        Public Health Pharmacist(NIG). Business manager and An Author.
       </h3>
       <p className="text-gray-600 text-2xl whitespace-pre-line">
         Olafusi Omotiba is a public health pharmacist and mental health

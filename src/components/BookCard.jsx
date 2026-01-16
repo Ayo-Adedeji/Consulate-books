@@ -1,6 +1,12 @@
-import { Link } from "react-router-dom";
-
 export default function BookCard({ book }) {
+  // Determine which format to show price for (prefer ebook if available)
+  const format = book.prices.ebook ? "ebook" : "hardcopy";
+  const originalPrice = book.prices[format].original;
+  const discountedPrice = book.prices[format].discounted;
+  const discountPercent = Math.round(
+    ((originalPrice - discountedPrice) / originalPrice) * 100
+  );
+
   return (
     <div className="mt-20 border rounded-2xl p-6 flex flex-col sm:flex-row gap-6 items-start hover:shadow-xl transition-shadow duration-300 bg-white">
       
@@ -22,17 +28,23 @@ export default function BookCard({ book }) {
             {book.shortDescription}
           </p>
 
-          <p className="font-semibold text-lg text-gray-800">
-            ₦{book.price}
-          </p>
+          {/* Price Display */}
+          <div className="flex items-center gap-3">
+            <span className="text-red-600 line-through">
+              ₦{originalPrice} ({discountPercent}% off)
+            </span>
+            <span className="font-semibold text-lg text-gray-800">
+              ₦{discountedPrice}
+            </span>
+          </div>
         </div>
 
-        <Link
-          to={`/book/${book.id}`}
+        <a
+          href={`/book/${book.id}`}
           className="self-start mt-6 rounded-lg bg-primary text-white px-6 py-3 font-medium text-sm hover:bg-primaryHover transition-colors"
         >
           View Book
-        </Link>
+        </a>
       </div>
     </div>
   );

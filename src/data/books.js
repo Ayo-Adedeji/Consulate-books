@@ -3,13 +3,15 @@ import bnameCover from "../assets/bname.jpg";
 import lwlCover from "../assets/lwl.jpg";
 import tpgCover from "../assets/tpg.jpg";
 
-
 export const books = [
   {
     id: "finding-true-pathway",
     title: "FINDING TRUE PATHWAY",
     author: "Olafusi Omotiba",
-    price: 5000,
+    prices: {
+      ebook: { original: 4000, discounted: 2000 },
+      hardcopy: { original: 6500, discounted: 5000 },
+    },
     currency: "NGN",
     shortDescription:
       "(A Journey Through Addiction, Breakdown, and the Fight for Recovery)",
@@ -22,15 +24,18 @@ His descent is subtle, relatable, and painfully real. His climb back is slow, ho
 
 More than a story about addiction, this book is a reminder that recovery is not just the removal of a substance—it is the rediscovery of self. It speaks to anyone who has ever felt lost inside their own life, weighed down by silence, exhaustion, or regret.
 If you find yourself in these pages, may you also find comfort, clarity, and the possibility of beginning again. A story not of perfection—but of transformation.`,
-    cover: ftpCover
+    cover: ftpCover,
   },
   {
     id: "bible-names",
     title: "BIBLE NAMES WORD SEARCH",
     author: "Olafusi Omotiba",
-    price: 5000,
+    prices: {
+      hardcopy: { original: 7000, discounted: 5000 }, // Ebook not available
+    },
     currency: "NGN",
-    shortDescription: "Bible words search puzzles with biblical names, bible characters, Christian names, faith based learning and good for Sunday school buyers.6 x9 size, 66 puzzles. Very good search words puzzle.",
+    shortDescription:
+      "Bible words search puzzles with biblical names, bible characters, Christian names, faith based learning and good for Sunday school buyers.6 x9 size, 66 puzzles. Very good search words puzzle.",
     description: `About The Book
 Discover names in the Bible: One Puzzle at a Time
 Explore the rich names and characters of Scripture with this engaging Bible Names Word Search Puzzle Book. From Genesis to Revelation, this book helps you learn both well-known and often overlooked biblical names through a fun, interactive, and meaningful puzzle experience.
@@ -54,15 +59,18 @@ This book is ideal for:
 It also makes a thoughtful Christian gift for birthdays, holidays, church events, or anyone who enjoys Bible-based activities.
 Strengthen your knowledge of Scripture, enjoy hours of puzzle-solving fun, and grow spiritually—one Bible name at a time.
 A meaningful resource for individuals, families, churches, and faith-based organizations.`,
-    cover: bnameCover
+    cover: bnameCover,
   },
   {
     id: "love-without-borders",
     title: "LOVE WITHOUT BORDERS",
     author: "Olafusi Omotiba",
-    price: 5000,
+    prices: {
+      hardcopy: { original: 7000, discounted: 5000 }, // Ebook not available
+    },
     currency: "NGN",
-    shortDescription: "Valentine Word Search Inspired By Cultures Around the World Puzzle Book for Adults, teens, educators, and gift buyers, 6x9 ... Love Through Relaxing and Thoughtful Word.",
+    shortDescription:
+      "Valentine Word Search Inspired By Cultures Around the World Puzzle Book for Adults, teens, educators, and gift buyers, 6x9 ... Love Through Relaxing and Thoughtful Word.",
     description: `About The Book
 Love Without Borders
 Valentine Word Search Inspired by Cultures Around the World
@@ -111,17 +119,21 @@ Encourages focus, relaxation, and mindful entertainment
 Whether you love learning about different cultures, enjoy word puzzles, or want a Valentine activity that feels intentional and original, Love Without Borders offers a refreshing alternative to ordinary holiday puzzle books.
 
 Slow down, explore love beyond borders, and enjoy a more thoughtful Valentine puzzle experience.`,
-    cover:lwlCover
-
+    cover: lwlCover,
   },
-   {
+  {
     id: "practical-guide",
-    title: "The Practical Guide for Care and Support Workers in Health and Social Care.",
+    title:
+      "The Practical Guide for Care and Support Workers in Health and Social Care.",
     author: "Olafusi Omotiba",
-    price: 5000,
+    prices: {
+      ebook: { original: 13000, discounted: 7000 },
+      hardcopy: { original: 20000, discounted: 10000 },
+    },
     currency: "NGN",
-    shortDescription: "(Enhancing skills, Avoiding Mistakes, Delivering Outstanding Care).",
-    description:`About The Book
+    shortDescription:
+      "(Enhancing skills, Avoiding Mistakes, Delivering Outstanding Care).",
+    description: `About The Book
 The Practical Guide for Care and Support Workers in Health and Social Care is a hands-on, good resource for anyone working in frontline care roles. It is written for real-world practice, not theory focused on what care workers actually face day to day and how to handle it safely, ethically, and professionally.
 
 This book covers the full scope of modern care work, from understanding your role and communicating effectively, to managing challenging behaviour, safeguarding vulnerable adults, handling medication, supporting mental health, and delivering dignified end-of-life care. Each chapter breaks down complex responsibilities into clear, practical guidance that can be applied immediately on the job.
@@ -133,10 +145,7 @@ The book also addresses often-overlooked areas such as cultural competence, self
 Whether you are new to health and social care or an experienced worker looking to sharpen your practice, this guide is designed to improve care quality, reduce errors, and support professional growth. It is equally valuable for care assistants, support workers, senior carers, students, and anyone preparing for training, assessments, or inspections.
 
 Clear, practical, and grounded in real experience, this book is a reliable reference for delivering safe, compassionate, and professional care in today’s demanding care environments.
-Until you get a copy, you will not know how details this book is. Grab your copy now
-
-`,
-    cover:tpgCover
-
-  }
+Until you get a copy, you will not know how details this book is. Grab your copy now.`,
+    cover: tpgCover,
+  },
 ];

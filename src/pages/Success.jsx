@@ -2,7 +2,6 @@ import { useLocation, Link } from "react-router-dom";
 
 export default function Success() {
   const { state } = useLocation();
-
   const { bookTitle, purchaseType } = state || {};
 
   return (
@@ -26,12 +25,12 @@ export default function Success() {
           </p>
         )}
 
-        <Link
-          to="/"
+        <a
+          href="/"
           className="inline-block bg-primary hover:bg-primaryHover text-white px-6 py-3 rounded-lg"
         >
           Back to Home
-        </Link>
+        </a>
       </div>
     </div>
   );
