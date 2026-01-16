@@ -1,5 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function BookCard({ book }) {
-  // Determine which format to show price for (prefer ebook if available)
+  const navigate = useNavigate();
   const format = book.prices.ebook ? "ebook" : "hardcopy";
   const originalPrice = book.prices[format].original;
   const discountedPrice = book.prices[format].discounted;
