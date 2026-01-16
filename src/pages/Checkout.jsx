@@ -57,13 +57,18 @@ export default function Checkout() {
         emailjs.send(
           "service_q8o2kpq",
           "template_wp7nkoz",
-          {
-            to_email: email,
-            book_title: book.title,
-            purchase_type: purchaseType,
-            amount: `₦${totalAmount}`,
-            pdf_link: purchaseType==="ebook" ? window.location.origin + book.pdf : "N/A"
-          },
+            {
+    to_email: email, // buyer's email
+    book_title: book.title,
+    purchase_type: purchaseType,
+    amount: `₦${totalAmount}`,
+    pdf_link:
+      purchaseType === "ebook"
+        ? window.location.origin + book.pdf
+        : "N/A",
+    delivery_message:
+      "Thank you for choosing this book and taking the time to read it. I hope it challenged, informed, or inspired you in a meaningful way. If it did, don’t stop—your voice matters. Share the book with others, recommend it, leave a review, or talk about it online or in your community. That support is what keeps ideas alive and helps this work reach the readers who need it next."
+  },
           "GFNcO2hqHL5f86mOw"
         );
 
