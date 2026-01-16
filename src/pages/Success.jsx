@@ -7,17 +7,13 @@ export default function Success() {
   const { state } = useLocation();
   const navigate = useNavigate();
 
-  if (!state) {
-    navigate("/");
-    return null;
-  }
+  if (!state) { navigate("/"); return null; }
 
   const { bookId, purchaseType, email, fullname } = state;
-  const book = books.find((b) => b.id === bookId);
+  const book = books.find(b => b.id === bookId);
 
   useEffect(() => {
-    if (email && book && purchaseType === "ebook") {
-      // Optionally resend email on load if you want
+    if (email && book && purchaseType==="ebook") {
       emailjs.send(
         "service_q8o2kpq",
         "template_wp7nkoz",
@@ -36,20 +32,12 @@ export default function Success() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-6 py-20">
       <div className="bg-white rounded-2xl shadow-lg p-10 max-w-lg text-center">
-        <h1 className="text-3xl font-bold text-green-600 mb-4">
-          Payment Successful 🎉
-        </h1>
+        <h1 className="text-3xl font-bold text-green-600 mb-4">Payment Successful 🎉</h1>
 
-        <p className="text-gray-700 mb-4">
-          Thank you for purchasing <strong>{book?.title}</strong>
-        </p>
+        <p className="text-gray-700 mb-4">Thank you for purchasing <strong>{book?.title}</strong></p>
 
-        {purchaseType === "ebook" && book?.pdf ? (
-          <a
-            href={book.pdf}
-            download
-            className="inline-block bg-primary text-white px-6 py-3 rounded-lg mb-4"
-          >
+        {purchaseType==="ebook" && book?.pdf ? (
+          <a href={book.pdf} download className="inline-block bg-primary text-white px-6 py-3 rounded-lg mb-4">
             Download Your E-Book
           </a>
         ) : (
@@ -62,10 +50,7 @@ export default function Success() {
           A copy has also been sent to your email: <strong>{email}</strong>
         </p>
 
-        <a
-          href="/"
-          className="inline-block bg-primary hover:bg-primaryHover text-white px-6 py-3 rounded-lg"
-        >
+        <a href="/" className="inline-block bg-primary hover:bg-primaryHover text-white px-6 py-3 rounded-lg">
           Back to Home
         </a>
       </div>
