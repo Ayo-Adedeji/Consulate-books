@@ -9,9 +9,10 @@ export const books = [
     title: "FINDING TRUE PATHWAY",
     author: "Olafusi Omotiba",
     prices: {
-      ebook: { original: 4000, discounted: 2000 },
-      hardcopy: { original: 6500, discounted: 5000 },
+      ebook: { original: 100, discounted: 100 },
+      hardcopy: { original: 100, discounted: 100 },
     },
+     pdf: "/pdfs/ftp.pdf",
     currency: "NGN",
     shortDescription:
       "(A Journey Through Addiction, Breakdown, and the Fight for Recovery)",
