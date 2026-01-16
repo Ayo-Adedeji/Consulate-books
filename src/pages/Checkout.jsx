@@ -61,7 +61,7 @@ export default function Checkout() {
         : `Your hard copy will be shipped to the address you provided. Thank you for choosing this book and taking the time to read it. I hope it challenged, informed, or inspired you in a meaningful way. If it did, don’t stop — your voice matters. Share the book with others, recommend it, leave a review, or talk about it online or in your community. That support is what keeps ideas alive and helps this work reach the readers who need it next.`;
 
     const handler = window.PaystackPop.setup({
-      key: import.meta.env.VITE_PAYSTACK_TEST_KEY || "pk_live_XXXXXXXXXXXXXXXX",
+      key: import.meta.env.VITE_PAYSTACK_LIVE_KEY || "pk_live_XXXXXXXXXXXXXXXX",
       email,
       amount: totalAmount * 100,
       currency: "NGN",
