@@ -39,8 +39,12 @@ export default function BookCard({ book }) {
           </div>
         </div>
 
-        <a
+          <a
           href={`/book/${book.id}`}
+          onClick={(e) => {
+            e.preventDefault();
+            navigate(`/book/${book.id}`);
+          }}
           className="self-start mt-6 rounded-lg bg-primary text-white px-6 py-3 font-medium text-sm hover:bg-primaryHover transition-colors"
         >
           View Book
