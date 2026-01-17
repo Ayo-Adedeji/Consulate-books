@@ -12,7 +12,7 @@ export const books = [
       ebook: { original: 100, discounted: 100 },
       hardcopy: { original: 100, discounted: 100 },
     },
-     pdf: "/pdfs/ftp.pdf",
+     pdf: "/pdfs/Finding-True-Pathway.pdf",
     currency: "NGN",
     shortDescription:
       "(A Journey Through Addiction, Breakdown, and the Fight for Recovery)",
@@ -131,6 +131,7 @@ Slow down, explore love beyond borders, and enjoy a more thoughtful Valentine pu
       ebook: { original: 13000, discounted: 7000 },
       hardcopy: { original: 20000, discounted: 10000 },
     },
+    pdf: "/pdfs/PRACTICAL-GUIDE.pdf",
     currency: "NGN",
     shortDescription:
       "(Enhancing skills, Avoiding Mistakes, Delivering Outstanding Care).",

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { books } from "../data/books";
 
-const DELIVERY_FEES = { lagos:2000, ogun:2000, southwest:4000, north:5000, uk:15000 };
+const DELIVERY_FEES = { lagos:100, ogun:2000, southwest:4000, north:5000, uk:15000 };
 
 export default function Checkout() {
   const { id } = useParams();
@@ -54,11 +54,16 @@ export default function Checkout() {
       currency: "NGN",
       callback: function() {
         // Email buyer
+        const deliveryMessage =
+  purchaseType === "ebook"
+    ? "Thank you for choosing this book and taking the time to read it. I hope it challenged, informed, or inspired you in a meaningful way. If it did, don’t stop—your voice matters. Share the book with others, recommend it, leave a review, or talk about it online or in your community. That support is what keeps ideas alive and helps this work reach the readers who need it next."
+    : "Thank you for purchasing the hard copy of this book. Delivery details will be communicated to you shortly. Your book should arrive within 3–5 working days. We appreciate your support and hope this book adds value to you.";
+
         emailjs.send(
           "service_q8o2kpq",
           "template_wp7nkoz",
             {
-    to_email: email, // buyer's email
+    to_email: email,
     book_title: book.title,
     purchase_type: purchaseType,
     amount: `₦${totalAmount}`,
@@ -66,8 +71,7 @@ export default function Checkout() {
       purchaseType === "ebook"
         ? window.location.origin + book.pdf
         : "N/A",
-    delivery_message:
-      "Thank you for choosing this book and taking the time to read it. I hope it challenged, informed, or inspired you in a meaningful way. If it did, don’t stop—your voice matters. Share the book with others, recommend it, leave a review, or talk about it online or in your community. That support is what keeps ideas alive and helps this work reach the readers who need it next."
+    delivery_message: deliveryMessage
   },
           "GFNcO2hqHL5f86mOw"
         );

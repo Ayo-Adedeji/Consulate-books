@@ -1,5 +1,6 @@
 import { books } from "../data/books";
 import BookCard from "../components/BookCard";
+import author from "../assets/author.jpg"; 
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
           
           {/* Author Image */}
           <img
-            src="src/assets/author.jpg"
+            src={author}
             alt="Author"
             className="w-24 h-24 rounded-full object-cover flex-shrink-0"
           />
