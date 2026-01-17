@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { books } from "../data/books";
 
-const DELIVERY_FEES = { lagos:100, ogun:2000, southwest:4000, north:5000, uk:15000 };
+const DELIVERY_FEES = { lagos:2000, ogun:2000, southwest:4000, north:5000, uk:15000 };
 
 export default function Checkout() {
   const { id } = useParams();
