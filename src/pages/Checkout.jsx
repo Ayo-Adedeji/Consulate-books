@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { books } from "../data/books";
 
-const DELIVERY_FEES = { lagos:2000, ogun:2000, southwest:4000, north:5000, uk:15000 };
+const DELIVERY_FEES = { SouthWest:1500, SouthEast:2000, SouthSouth:2500, NorthEast:3000, NorthWest:3000, NorthCentral:2500, UK:8000 };
 
 export default function Checkout() {
   const { id } = useParams();
@@ -145,13 +145,16 @@ export default function Checkout() {
                 <input name="fullname" required placeholder="Full name" className="w-full border rounded-lg px-4 py-3" />
                 <input name="phone" required placeholder="Phone number" className="w-full border rounded-lg px-4 py-3" />
                 <textarea name="address" required placeholder="Delivery address" className="w-full border rounded-lg px-4 py-3" />
+                <textarea name="address" required placeholder="Nearest Landmark" className="w-full border rounded-lg px-4 py-3" />
                 <select required onChange={(e)=>handleStateChange(e.target.value)} className="w-full border rounded-lg px-4 py-3">
                   <option value="">Select location</option>
-                  <option value="lagos">Lagos (₦2,000)</option>
-                  <option value="ogun">Ogun (₦2,000)</option>
-                  <option value="southwest">Other SW (₦4,000)</option>
-                  <option value="north">North (₦5,000)</option>
-                  <option value="uk">UK (₦15,000)</option>
+                  <option value="South West">South West (₦1,500)</option>
+                  <option value="South East">South East (₦2,000)</option>
+                  <option value="South South">South South (₦2,500)</option>
+                  <option value="North East">North East (₦3,000)</option>
+                  <option value="North West">North West (₦3,000)</option>
+                  <option value="North Central">North Central (₦2,500)</option>
+                  <option value="United Kingdom">United Kingdom (₦8,000)</option>
                 </select>
               </>
             )}

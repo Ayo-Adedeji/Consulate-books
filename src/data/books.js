@@ -10,7 +10,7 @@ export const books = [
     author: "Olafusi Omotiba",
     prices: {
       ebook: { original: 3500, discounted: 2000 },
-      hardcopy: { original: 5000, discounted: 3500 },
+      hardcopy: { original: 6500, discounted: 5000 },
     },
      pdf: "/pdfs/Finding-True-Pathway.pdf",
     currency: "NGN",
