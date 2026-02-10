@@ -2,7 +2,7 @@ import ftpCover from "../assets/ftp.jpg";
 import bnameCover from "../assets/bname.jpg";
 import lwlCover from "../assets/lwl.jpg";
 import tpgCover from "../assets/tpg.jpg";
-import power from "../assets/power.jpeg";
+import Power from "../assets/Power.jpeg";
 import anxiety from "../assets/anxiety.jpeg";
 import pharmacy from "../assets/pharmacy.jpg.jpeg";
 import dogs from "../assets/dogs.jpg";
@@ -227,7 +227,7 @@ It is about becoming capable, independent, and impactful.
 Start where you are.
 Build what matters.
 Create a future you respect.`,
-    cover: power,
+    cover: Power,
   },
    {
     id: "pathways-to-overcome-anxiety-and-depression",
