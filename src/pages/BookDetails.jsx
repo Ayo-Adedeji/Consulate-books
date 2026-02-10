@@ -1,13 +1,12 @@
 import { useParams } from "react-router-dom";
 import { books } from "../data/books";
+import BuyButtons from "../components/BuyButtons";
 
 export default function BookDetails() {
   const { id } = useParams();
   const book = books.find(b => b.id === id);
 
   if (!book) return <p className="text-center py-20">Book not found</p>;
-
-  const hasEbook = Boolean(book.prices?.ebook);
 
   return (
     <div className="mt-24 max-w-5xl mx-auto py-16 px-6">
@@ -31,31 +30,7 @@ export default function BookDetails() {
           </p>
 
           {/* BUY BUTTONS */}
-
-          {/* EBOOK */}
-          {hasEbook ? (
-            <a
-              href={`/checkout/${book.id}?type=ebook`}
-              className="block w-full text-center bg-primary hover:bg-primaryHover text-white px-6 py-3 rounded-lg mb-4 mt-6"
-            >
-              Buy E-Book
-            </a>
-          ) : (
-            <button
-              disabled
-              className="block w-full text-center bg-gray-300 text-gray-600 px-6 py-3 rounded-lg mb-4 mt-6 cursor-not-allowed"
-            >
-              E-book not available
-            </button>
-          )}
-
-          {/* HARDCOPY */}
-          <a
-            href={`/checkout/${book.id}?type=hardcopy`}
-            className="block w-full text-center border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg"
-          >
-            Buy Hard Copy
-          </a>
+          <BuyButtons book={book} />
         </div>
       </div>
     </div>

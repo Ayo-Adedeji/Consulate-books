@@ -16,6 +16,8 @@ export const books = [
       ebook: { original: 3500, discounted: 2000 },
       hardcopy: { original: 6500, discounted: 5000 },
     },
+    hardcopyAvailable: true,
+amazonLink: null,
      pdf: "/pdfs/Finding-True-Pathway.pdf",
     currency: "NGN",
     shortDescription:
@@ -31,13 +33,139 @@ More than a story about addiction, this book is a reminder that recovery is not 
 If you find yourself in these pages, may you also find comfort, clarity, and the possibility of beginning again. A story not of perfection—but of transformation.`,
     cover: ftpCover,
   },
+ 
   {
+    id: "practical-guide",
+    title:
+      "The Practical Guide for Care and Support Workers in Health and Social Care.",
+    author: "Olafusi Omotiba",
+    prices: {
+      ebook: { original: 13000, discounted: 7000 },
+      hardcopy: { original: 20000, discounted: 10000 },
+    },
+    hardcopyAvailable: true,
+amazonLink: null,
+    pdf: "/pdfs/PRACTICAL-GUIDE.pdf",
+    currency: "NGN",
+    shortDescription:
+      "(Enhancing skills, Avoiding Mistakes, Delivering Outstanding Care).",
+    description: `About The Book
+The Practical Guide for Care and Support Workers in Health and Social Care is a hands-on, good resource for anyone working in frontline care roles. It is written for real-world practice, not theory focused on what care workers actually face day to day and how to handle it safely, ethically, and professionally.
+
+This book covers the full scope of modern care work, from understanding your role and communicating effectively, to managing challenging behaviour, safeguarding vulnerable adults, handling medication, supporting mental health, and delivering dignified end-of-life care. Each chapter breaks down complex responsibilities into clear, practical guidance that can be applied immediately on the job.
+
+What sets this guide apart is its strong emphasis on person-centred care, professional boundaries, and avoiding common mistakes that can put service users or care workers themselves at risk. Realistic scenarios, reflective questions, and model answers are used throughout to reinforce learning and build confidence. Checklists, step-by-step approaches, and practical frameworks help bridge the gap between policy and practice.
+
+The book also addresses often-overlooked areas such as cultural competence, self-care for care workers, technology in care, documentation, and reflective practice, recognising that high-quality care depends on both skill and sustainability.
+
+Whether you are new to health and social care or an experienced worker looking to sharpen your practice, this guide is designed to improve care quality, reduce errors, and support professional growth. It is equally valuable for care assistants, support workers, senior carers, students, and anyone preparing for training, assessments, or inspections.
+
+Clear, practical, and grounded in real experience, this book is a reliable reference for delivering safe, compassionate, and professional care in today’s demanding care environments.
+Until you get a copy, you will not know how details this book is. Grab your copy now.`,
+    cover: tpgCover,
+  },
+   {
+    id: "the-power-of-modern-entrepreneurship",
+    title: "THE POWER OF MODERN ENTREPRENEURSHIP",
+    author: "Olafusi Omotiba",
+    prices: {
+      ebook: { original: 3500, discounted: 2000 },
+      hardcopy: { original: 6500, discounted: 5000 },
+    },
+    hardcopyAvailable: true,
+amazonLink: null,
+     pdf: "/pdfs/entrepreneurship.pdf",
+    currency: "NGN",
+    shortDescription:
+      "(How to turn Skills into Income, Build True Wealth and create a Meaningful Legacy)",
+    description: `Most people work hard all their lives, yet still arrive late to success.
+Not because they lack effort, but because they lack direction.
+The Power of Modern Entrepreneurship is a powerful and practical guide to entrepreneurship, wealth creation, and purposeful living. It is written for anyone who wants to rise from limited beginnings and build lasting success through discipline, skills, and integrity.
+This is not a get-rich-quick book.
+It is a realistic roadmap for people who are willing to work, learn, and grow—without losing their values along the way.
+Through clear principles, real-life insights, and step-by-step thinking, this book shows why entrepreneurship remains the fastest and most reliable path to financial independence and personal freedom.
+In this book, you will discover:
+•	Why entrepreneurship accelerates success when traditional paths delay it
+•	Step-by-step strategies to build wealth, even when starting from nothing
+•	The mindset and habits shared by the world’s self-made billionaires
+•	How to turn skills into income and income into long-term assets
+•	Why hard work still matters—and how to make it compound
+•	The difference between being rich and being truly wealthy
+•	Why success without purpose leads to emptiness
+•	How to build legacy, not just money
+This book is for you if:
+•	You feel stuck and want a clear direction forward
+•	You want to build wealth without compromising your values
+•	You believe success should bring freedom, not pressure
+•	You want your work to have meaning beyond money
+Unlike many motivational books filled with hype, The Power of Modern Entrepreneurship focuses on foundations, mindset, discipline, patience, and purpose. It challenges you to think long-term, act intentionally, and grow steadily.
+Entrepreneurship is not just about money.
+It is about becoming capable, independent, and impactful.
+Start where you are.
+Build what matters.
+Create a future you respect.`,
+    cover: Power,
+  },
+   {
+    id: "pathways-to-overcome-anxiety-and-depression",
+    title: "PATHWAYS TO OVERCOME ANXIETY AND DEPRESSION",
+    author: "Olafusi Omotiba",
+    prices: {
+      ebook: { original: 3500, discounted: 2000 },
+      hardcopy: { original: 6500, discounted: 5000 },
+    },
+    hardcopyAvailable: true,
+amazonLink: null,
+     pdf: "/pdfs/anxiety.pdf",
+    currency: "NGN",
+    shortDescription:
+      "(Take control, Break the Cycle, Heal, Grow and Thrive)",
+    description: `About The Book
+Pathways to Overcome Anxiety and Depression is a hands-on, compassionate guide for anyone navigating the pressures of the modern world. It is written for real-world healing, not abstract theory, focused on what young people actually face day-to-day and how to manage it with strength, clarity, and hope.
+This book covers the full scope of modern mental well-being, from understanding the roots of anxiety and depression to exploring how the mind works under pressure, managing the influence of social media, and building a life of resilience. Each chapter breaks down complex emotional and psychological challenges into clear, practical guidance that can be applied immediately to your life.
+What sets this guide apart is its strong emphasis on evidence-based pathways, self-compassion, and avoiding the common traps of self-blame and minimization. Realistic case studies, reflective exercises, and self-assessment tools are used throughout to reinforce learning and build confidence. Checklists, daily practices, and practical frameworks help bridge the gap between understanding and action.
+The book also addresses often-overlooked areas
+, including the impact of sleep and nutrition, the role of social and environmental factors, and the importance of breaking the silence around mental health, recognising
+that true well-being depends on both internal and external support.
+Whether you are new to exploring your mental health or an experienced individual looking to deepen your practice of self-care, this guide is designed to improve your quality of life, reduce emotional distress, and support personal growth. It is equally valuable for students, young professionals, parents, educators, and anyone seeking to understand and support the younger generation.
+Clear, practical, and grounded in real experience, this book is a reliable reference for building a sustainable future of mental well-being in today’s demanding world.
+Until you get a copy, you will not know how detailed this book is. Grab your copy now.`,
+    cover: anxiety,
+  },
+   {
+    id: "pharmacy-politics-in-nigeria",
+    title: "PHARMACY POLITICS IN NIGERIA",
+    author: "Olafusi Omotiba",
+    prices: {
+      ebook: { original: 7000, discounted: 5000 },
+      hardcopy: { original: 10000, discounted: 8000 },
+    },
+    hardcopyAvailable: true,
+amazonLink: null,
+     pdf: "/pdfs/pharmacy.pdf",
+    currency: "NGN",
+    shortDescription:
+      "(Hidden power dynamics shaping pharmaceutical practice, regulation, and health policy in Nigeria)",
+    description: `About the book
+    Pharmacy Politics in Nigeria reveals the hidden power dynamics shaping pharmaceutical practice, regulation, and health policy in Nigeria—and why pharmacists are often excluded from decision-making. This book goes beyond dispensing and regulation to expose how politics, not expertise, determines leadership appointments, policy outcomes, and professional influence.
+
+Drawing on Nigeria’s health governance history, regulatory structures, and real institutional experience, the book examines key bodies such as the Federal Ministry of Health, NAFDAC, PCN, PSN, and the National Assembly, while contrasting pharmacy’s marginalisation with the political dominance of the Nigerian Medical Association.
+
+Practical and action-oriented, it offers clear pathways for pharmacists to gain political influence through professional leadership, party politics, appointments, legislative advocacy, and strategic networking. It also addresses neglected issues such as donor influence, budget politics, weak enforcement, and the cost of professional neutrality.
+
+Written for pharmacists, students, policymakers, and health leaders, Pharmacy Politics in Nigeria is an essential guide for anyone serious about shaping pharmaceutical policy and healthcare leadership in Nigeria.`,
+    cover: pharmacy,
+  },
+   {
     id: "bible-names",
     title: "BIBLE NAMES WORD SEARCH",
     author: "Olafusi Omotiba",
     prices: {
-      hardcopy: { original: 7000, discounted: 5000 }, // Ebook not available
+      // hardcopy: { original: 7000, discounted: 5000 }, // Ebook not available
     },
+    hardcopyAvailable: false,
+amazonLink: "https://www.amazon.co.uk/BIBLE-NAMES-WORD-SEARCH-characters/dp/B0GD6Z7V64/ref=sr_1_5?crid=3N77SLEI32PYC&dib=eyJ2IjoiMSJ9.FalU4jkdZ_ygBTBGMVPO5HaZYS8Rn4rcp6nJvUXWkAn-ZMjraqtaEOuWFzGnZDm-70boyvslsuIALNnOQll805IeNi9xi5aAOZ9w8WIYjlYgjch6ecxn70EvatNQBJ6W.Yy_PoCybGg48zTxl25kytk7cGgFx_s0ggiLIYV-kNtY&dib_tag=se&keywords=olafusi+omotiba&qid=1770705869&sprefix=%2Caps%2C106&sr=8-5",
+
     currency: "NGN",
     shortDescription:
       "Bible words search puzzles with biblical names, bible characters, Christian names, faith based learning and good for Sunday school buyers.6 x9 size, 66 puzzles. Very good search words puzzle.",
@@ -71,8 +199,10 @@ A meaningful resource for individuals, families, churches, and faith-based organ
     title: "LOVE WITHOUT BORDERS",
     author: "Olafusi Omotiba",
     prices: {
-      hardcopy: { original: 7000, discounted: 5000 }, // Ebook not available
+      // hardcopy: { original: 7000, discounted: 5000 }, // Ebook not available
     },
+    hardcopyAvailable: false,
+amazonLink: "https://www.amazon.co.uk/Love-Without-Boarders-Valentine-Thoughtful/dp/B0GCLFN815/ref=sr_1_6?crid=3N77SLEI32PYC&dib=eyJ2IjoiMSJ9.FalU4jkdZ_ygBTBGMVPO5HaZYS8Rn4rcp6nJvUXWkAn-ZMjraqtaEOuWFzGnZDm-70boyvslsuIALNnOQll805IeNi9xi5aAOZ9w8WIYjlYgjch6ecxn70EvatNQBJ6W.Yy_PoCybGg48zTxl25kytk7cGgFx_s0ggiLIYV-kNtY&dib_tag=se&keywords=olafusi+omotiba&qid=1770705869&sprefix=%2Caps%2C106&sr=8-6",
     currency: "NGN",
     shortDescription:
       "Valentine Word Search Inspired By Cultures Around the World Puzzle Book for Adults, teens, educators, and gift buyers, 6x9 ... Love Through Relaxing and Thoughtful Word.",
@@ -127,41 +257,17 @@ Slow down, explore love beyond borders, and enjoy a more thoughtful Valentine pu
     cover: lwlCover,
   },
   {
-    id: "practical-guide",
-    title:
-      "The Practical Guide for Care and Support Workers in Health and Social Care.",
-    author: "Olafusi Omotiba",
-    prices: {
-      ebook: { original: 13000, discounted: 7000 },
-      hardcopy: { original: 20000, discounted: 10000 },
-    },
-    pdf: "/pdfs/PRACTICAL-GUIDE.pdf",
-    currency: "NGN",
-    shortDescription:
-      "(Enhancing skills, Avoiding Mistakes, Delivering Outstanding Care).",
-    description: `About The Book
-The Practical Guide for Care and Support Workers in Health and Social Care is a hands-on, good resource for anyone working in frontline care roles. It is written for real-world practice, not theory focused on what care workers actually face day to day and how to handle it safely, ethically, and professionally.
-
-This book covers the full scope of modern care work, from understanding your role and communicating effectively, to managing challenging behaviour, safeguarding vulnerable adults, handling medication, supporting mental health, and delivering dignified end-of-life care. Each chapter breaks down complex responsibilities into clear, practical guidance that can be applied immediately on the job.
-
-What sets this guide apart is its strong emphasis on person-centred care, professional boundaries, and avoiding common mistakes that can put service users or care workers themselves at risk. Realistic scenarios, reflective questions, and model answers are used throughout to reinforce learning and build confidence. Checklists, step-by-step approaches, and practical frameworks help bridge the gap between policy and practice.
-
-The book also addresses often-overlooked areas such as cultural competence, self-care for care workers, technology in care, documentation, and reflective practice, recognising that high-quality care depends on both skill and sustainability.
-
-Whether you are new to health and social care or an experienced worker looking to sharpen your practice, this guide is designed to improve care quality, reduce errors, and support professional growth. It is equally valuable for care assistants, support workers, senior carers, students, and anyone preparing for training, assessments, or inspections.
-
-Clear, practical, and grounded in real experience, this book is a reliable reference for delivering safe, compassionate, and professional care in today’s demanding care environments.
-Until you get a copy, you will not know how details this book is. Grab your copy now.`,
-    cover: tpgCover,
-  },
-   {
     id: "dogs-fans",
     title: "DOGS FANS",
     author: "Olafusi Omotiba",
     prices: {
       // ebook: { original: 3500, discounted: 2000 },
-      hardcopy: { original: 6500, discounted: 5000 },
+      // hardcopy: { original: 6500, discounted: 5000 },
+
     },
+    hardcopyAvailable: false,
+amazonLink: "https://www.amazon.co.uk/Fans-word-search-Puzzles-Book/dp/B0GB7GBKSR/ref=sr_1_7?crid=3N77SLEI32PYC&dib=eyJ2IjoiMSJ9.FalU4jkdZ_ygBTBGMVPO5HaZYS8Rn4rcp6nJvUXWkAn-ZMjraqtaEOuWFzGnZDm-70boyvslsuIALNnOQll805IeNi9xi5aAOZ9w8WIYjlYgjch6ecxn70EvatNQBJ6W.Yy_PoCybGg48zTxl25kytk7cGgFx_s0ggiLIYV-kNtY&dib_tag=se&keywords=olafusi+omotiba&qid=1770705869&sprefix=%2Caps%2C106&sr=8-7",
+
     //  pdf: "/pdfs/Finding-True-Pathway.pdf",
     currency: "NGN",
     shortDescription:
@@ -188,91 +294,5 @@ Whether you’re a casual puzzler, a dog-obsessed family member, or simply looki
 Get ready to fetch some puzzle fun and enjoy hours of tail-wagging entertainment!
 Grab your copy today and let the canine-themed fun begin`,
     cover: dogs,
-  },
-   {
-    id: "the-power-of-modern-entrepreneurship",
-    title: "THE POWER OF MODERN ENTREPRENEURSHIP",
-    author: "Olafusi Omotiba",
-    prices: {
-      ebook: { original: 3500, discounted: 2000 },
-      hardcopy: { original: 6500, discounted: 5000 },
-    },
-     pdf: "/pdfs/entrepreneurship.pdf",
-    currency: "NGN",
-    shortDescription:
-      "(How to turn Skills into Income, Build True Wealth and create a Meaningful Legacy)",
-    description: `Most people work hard all their lives, yet still arrive late to success.
-Not because they lack effort, but because they lack direction.
-The Power of Modern Entrepreneurship is a powerful and practical guide to entrepreneurship, wealth creation, and purposeful living. It is written for anyone who wants to rise from limited beginnings and build lasting success through discipline, skills, and integrity.
-This is not a get-rich-quick book.
-It is a realistic roadmap for people who are willing to work, learn, and grow—without losing their values along the way.
-Through clear principles, real-life insights, and step-by-step thinking, this book shows why entrepreneurship remains the fastest and most reliable path to financial independence and personal freedom.
-In this book, you will discover:
-•	Why entrepreneurship accelerates success when traditional paths delay it
-•	Step-by-step strategies to build wealth, even when starting from nothing
-•	The mindset and habits shared by the world’s self-made billionaires
-•	How to turn skills into income and income into long-term assets
-•	Why hard work still matters—and how to make it compound
-•	The difference between being rich and being truly wealthy
-•	Why success without purpose leads to emptiness
-•	How to build legacy, not just money
-This book is for you if:
-•	You feel stuck and want a clear direction forward
-•	You want to build wealth without compromising your values
-•	You believe success should bring freedom, not pressure
-•	You want your work to have meaning beyond money
-Unlike many motivational books filled with hype, The Power of Modern Entrepreneurship focuses on foundations, mindset, discipline, patience, and purpose. It challenges you to think long-term, act intentionally, and grow steadily.
-Entrepreneurship is not just about money.
-It is about becoming capable, independent, and impactful.
-Start where you are.
-Build what matters.
-Create a future you respect.`,
-    cover: Power,
-  },
-   {
-    id: "pathways-to-overcome-anxiety-and-depression",
-    title: "PATHWAYS TO OVERCOME ANXIETY AND DEPRESSION",
-    author: "Olafusi Omotiba",
-    prices: {
-      ebook: { original: 3500, discounted: 2000 },
-      hardcopy: { original: 6500, discounted: 5000 },
-    },
-     pdf: "/pdfs/anxiety.pdf",
-    currency: "NGN",
-    shortDescription:
-      "(Take control, Break the Cycle, Heal, Grow and Thrive)",
-    description: `About The Book
-Pathways to Overcome Anxiety and Depression is a hands-on, compassionate guide for anyone navigating the pressures of the modern world. It is written for real-world healing, not abstract theory, focused on what young people actually face day-to-day and how to manage it with strength, clarity, and hope.
-This book covers the full scope of modern mental well-being, from understanding the roots of anxiety and depression to exploring how the mind works under pressure, managing the influence of social media, and building a life of resilience. Each chapter breaks down complex emotional and psychological challenges into clear, practical guidance that can be applied immediately to your life.
-What sets this guide apart is its strong emphasis on evidence-based pathways, self-compassion, and avoiding the common traps of self-blame and minimization. Realistic case studies, reflective exercises, and self-assessment tools are used throughout to reinforce learning and build confidence. Checklists, daily practices, and practical frameworks help bridge the gap between understanding and action.
-The book also addresses often-overlooked areas
-, including the impact of sleep and nutrition, the role of social and environmental factors, and the importance of breaking the silence around mental health, recognising
-that true well-being depends on both internal and external support.
-Whether you are new to exploring your mental health or an experienced individual looking to deepen your practice of self-care, this guide is designed to improve your quality of life, reduce emotional distress, and support personal growth. It is equally valuable for students, young professionals, parents, educators, and anyone seeking to understand and support the younger generation.
-Clear, practical, and grounded in real experience, this book is a reliable reference for building a sustainable future of mental well-being in today’s demanding world.
-Until you get a copy, you will not know how detailed this book is. Grab your copy now.`,
-    cover: anxiety,
-  },
-   {
-    id: "pharmacy-politics-in-nigeria",
-    title: "PHARMACY POLITICS IN NIGERIA",
-    author: "Olafusi Omotiba",
-    prices: {
-      ebook: { original: 7000, discounted: 5000 },
-      hardcopy: { original: 10000, discounted: 8000 },
-    },
-     pdf: "/pdfs/pharmacy.pdf",
-    currency: "NGN",
-    shortDescription:
-      "(Hidden power dynamics shaping pharmaceutical practice, regulation, and health policy in Nigeria)",
-    description: `About the book
-    Pharmacy Politics in Nigeria reveals the hidden power dynamics shaping pharmaceutical practice, regulation, and health policy in Nigeria—and why pharmacists are often excluded from decision-making. This book goes beyond dispensing and regulation to expose how politics, not expertise, determines leadership appointments, policy outcomes, and professional influence.
-
-Drawing on Nigeria’s health governance history, regulatory structures, and real institutional experience, the book examines key bodies such as the Federal Ministry of Health, NAFDAC, PCN, PSN, and the National Assembly, while contrasting pharmacy’s marginalisation with the political dominance of the Nigerian Medical Association.
-
-Practical and action-oriented, it offers clear pathways for pharmacists to gain political influence through professional leadership, party politics, appointments, legislative advocacy, and strategic networking. It also addresses neglected issues such as donor influence, budget politics, weak enforcement, and the cost of professional neutrality.
-
-Written for pharmacists, students, policymakers, and health leaders, Pharmacy Politics in Nigeria is an essential guide for anyone serious about shaping pharmaceutical policy and healthcare leadership in Nigeria.`,
-    cover: pharmacy,
   },
 ];
