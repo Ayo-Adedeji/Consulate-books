@@ -4,9 +4,10 @@ import BuyButtons from "../components/BuyButtons";
 
 export default function BookDetails() {
   const { id } = useParams();
-  const book = books.find(b => b.id === id);
+  const book = books.find((b) => b.id === id);
 
-  if (!book) return <p className="text-center py-20">Book not found</p>;
+  if (!book)
+    return <p className="text-center py-20">Book not found</p>;
 
   return (
     <div className="mt-24 max-w-5xl mx-auto py-16 px-6">
@@ -18,7 +19,10 @@ export default function BookDetails() {
         />
 
         <div>
-          <h1 className="text-4xl font-bold leading-tight">{book.title}</h1>
+          <h1 className="text-4xl font-bold leading-tight">
+            {book.title}
+          </h1>
+
           <p className="mt-3 text-lg text-gray-600">
             by <span className="font-medium">{book.author}</span>
           </p>

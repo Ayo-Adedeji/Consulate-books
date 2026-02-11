@@ -1,63 +1,41 @@
-import { ShoppingCart, BookOpen, ExternalLink } from "lucide-react";
+import { FaAmazon } from "react-icons/fa"
+import { useNavigate } from "react-router-dom"
 
-export default function BuyButtons({ book }) {
-  const hasEbook = Boolean(book.prices?.ebook);
-  const hasHardcopy = Boolean(book.prices?.hardcopy);
-  const hardcopyAvailable = book.hardcopyAvailable !== false;
-  const isAmazonHardcopy = Boolean(book.amazonLink);
+const BuyButtons = ({ book }) => {
+  const navigate = useNavigate()
+
+  const handleEbookBuy = () => {
+    navigate(`/checkout/${book.id}?type=ebook`)
+  }
+
+  const handleHardcopyBuy = () => {
+    if (book.amazonLink) {
+      window.open(book.amazonLink, "_blank")
+    }
+  }
 
   return (
-    <div className="mt-8">
-      {/* EBOOK BUTTON */}
-      {hasEbook ? (
-        <a
-          href={`/checkout/${book.id}?type=ebook`}
-          className="flex items-center justify-center gap-2 w-full bg-primary hover:bg-primaryHover text-white px-6 py-3 rounded-lg mb-4 transition"
-        >
-          <BookOpen size={18} />
-          Buy E-Book
-        </a>
-      ) : (
-        <button
-          disabled
-          className="w-full bg-gray-300 text-gray-600 px-6 py-3 rounded-lg mb-4 cursor-not-allowed"
-        >
-          E-book not available
-        </button>
-      )}
+    <div className="flex flex-col gap-3 mt-4">
+      {/* Ebook Button */}
+      <button
+        onClick={handleEbookBuy}
+        className="bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition"
+      >
+        Buy eBook – ₦{book.ebookPrice}
+      </button>
 
-      {/* HARDCOPY BUTTON */}
-      {hasHardcopy ? (
-        hardcopyAvailable && !isAmazonHardcopy ? (
-          <a
-            href={`/checkout/${book.id}?type=hardcopy`}
-            className="flex items-center justify-center gap-2 w-full border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg transition"
-          >
-            <ShoppingCart size={18} />
-            Buy Hard Copy
-          </a>
-        ) : (
-          <a
-            href={book.amazonLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 w-full border border-yellow-500 text-yellow-600 hover:bg-yellow-500 hover:text-black px-6 py-3 rounded-lg transition"
-          >
-            <ExternalLink size={18} />
-            Buy on Amazon
-            <span className="ml-2 text-xs bg-black text-yellow-400 px-2 py-1 rounded-full">
-              Amazon
-            </span>
-          </a>
-        )
-      ) : (
+      {/* Hardcopy via Amazon */}
+      {book.amazonLink && (
         <button
-          disabled
-          className="w-full bg-gray-300 text-gray-600 px-6 py-3 rounded-lg cursor-not-allowed"
+          onClick={handleHardcopyBuy}
+          className="flex items-center justify-center gap-2 bg-yellow-400 text-black py-2 rounded-lg hover:bg-yellow-500 transition font-semibold"
         >
-          Hard copy not available
+          <FaAmazon size={18} />
+          Buy Hardcopy on Amazon
         </button>
       )}
     </div>
-  );
+  )
 }
+
+export default BuyButtons

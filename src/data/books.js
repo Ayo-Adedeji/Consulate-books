@@ -17,7 +17,8 @@ export const books = [
       hardcopy: { original: 6500, discounted: 5000 },
     },
     hardcopyAvailable: true,
-amazonLink: null,
+    amazonLink: "https://www.amazon.co.uk/Finding-True-Pathway-addiction-breakdown/dp/B0G5JHGWX8/ref=sr_1_2?crid=3N77SLEI32PYC&dib=eyJ2IjoiMSJ9.FalU4jkdZ_ygBTBGMVPO5HaZYS8Rn4rcp6nJvUXWkAn-ZMjraqtaEOuWFzGnZDm-70boyvslsuIALNnOQll805IeNi9xi5aAOZ9w8WIYjlYgjch6ecxn70EvatNQBJ6W.Yy_PoCybGg48zTxl25kytk7cGgFx_s0ggiLIYV-kNtY&dib_tag=se&keywords=olafusi+omotiba&qid=1770705869&sprefix=%2Caps%2C106&sr=8-2",
+// amazonLink: null,
      pdf: "/pdfs/Finding-True-Pathway.pdf",
     currency: "NGN",
     shortDescription:
@@ -44,7 +45,7 @@ If you find yourself in these pages, may you also find comfort, clarity, and the
       hardcopy: { original: 20000, discounted: 10000 },
     },
     hardcopyAvailable: true,
-amazonLink: null,
+amazonLink: "https://www.amazon.co.uk/Practical-Support-Workers-Health-Social-ebook/dp/B0GC9XLH5P/ref=sr_1_3?crid=3N77SLEI32PYC&dib=eyJ2IjoiMSJ9.FalU4jkdZ_ygBTBGMVPO5HaZYS8Rn4rcp6nJvUXWkAn-ZMjraqtaEOuWFzGnZDm-70boyvslsuIALNnOQll805IeNi9xi5aAOZ9w8WIYjlYgjch6ecxn70EvatNQBJ6W.Yy_PoCybGg48zTxl25kytk7cGgFx_s0ggiLIYV-kNtY&dib_tag=se&keywords=olafusi+omotiba&qid=1770705869&sprefix=%2Caps%2C106&sr=8-3",
     pdf: "/pdfs/PRACTICAL-GUIDE.pdf",
     currency: "NGN",
     shortDescription:
@@ -73,7 +74,7 @@ Until you get a copy, you will not know how details this book is. Grab your copy
       hardcopy: { original: 6500, discounted: 5000 },
     },
     hardcopyAvailable: true,
-amazonLink: null,
+amazonLink: "https://www.amazon.co.uk/dp/B0GMJVKGRB/ref=mp_s_a_1_4?crid=1S3U1QAF6F8MT&dib=eyJ2IjoiMSJ9.FalU4jkdZ_ygBTBGMVPO5HaZYS8Rn4rcp6nJvUXWkAmHDbghmXLD0ILZ_xw-1p4qtqxYSBkw3QdPUVs56BDz7qEJtz3sLsPuzqATM4rXoeaBctlLcwFJPEAZdYTqV9dkssMYBcvn2HywDuFRPQAsNQ.Bif0x3X3VFNWCpZ_ZoyMNYHIm3iHTqL4kuMMREiIFe4&dib_tag=se&keywords=Olafusi+omotiba&qid=1770712781&s=books&sprefix=Olafusi+omotiba+%2Cbooks%2C92&sr=1-4",
      pdf: "/pdfs/entrepreneurship.pdf",
     currency: "NGN",
     shortDescription:
@@ -115,7 +116,7 @@ Create a future you respect.`,
       hardcopy: { original: 6500, discounted: 5000 },
     },
     hardcopyAvailable: true,
-amazonLink: null,
+amazonLink: "https://www.amazon.co.uk/PATHWAYS-OVERCOME-ANXIETY-DEPRESSION-Control/dp/B0GLFGC99N/ref=sr_1_4?crid=3N77SLEI32PYC&dib=eyJ2IjoiMSJ9.FalU4jkdZ_ygBTBGMVPO5HaZYS8Rn4rcp6nJvUXWkAn-ZMjraqtaEOuWFzGnZDm-70boyvslsuIALNnOQll805IeNi9xi5aAOZ9w8WIYjlYgjch6ecxn70EvatNQBJ6W.Yy_PoCybGg48zTxl25kytk7cGgFx_s0ggiLIYV-kNtY&dib_tag=se&keywords=olafusi+omotiba&qid=1770705869&sprefix=%2Caps%2C106&sr=8-4",
      pdf: "/pdfs/anxiety.pdf",
     currency: "NGN",
     shortDescription:
@@ -141,7 +142,7 @@ Until you get a copy, you will not know how detailed this book is. Grab your cop
       hardcopy: { original: 10000, discounted: 8000 },
     },
     hardcopyAvailable: true,
-amazonLink: null,
+amazonLink: "https://www.amazon.co.uk/dp/B0GMBBVX2N/ref=sr_1_1?crid=3N77SLEI32PYC&dib=eyJ2IjoiMSJ9.FalU4jkdZ_ygBTBGMVPO5HaZYS8Rn4rcp6nJvUXWkAn-ZMjraqtaEOuWFzGnZDm-70boyvslsuIALNnOQll805IeNi9xi5aAOZ9w8WIYjlYgjch6ecxn70EvatNQBJ6W.Yy_PoCybGg48zTxl25kytk7cGgFx_s0ggiLIYV-kNtY&dib_tag=se&keywords=olafusi+omotiba&qid=1770705869&sprefix=%2Caps%2C106&sr=8-1",
      pdf: "/pdfs/pharmacy.pdf",
     currency: "NGN",
     shortDescription:
