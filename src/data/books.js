@@ -13,7 +13,7 @@ export const books = [
     title: "FINDING TRUE PATHWAY",
     author: "Olafusi Omotiba",
     prices: {
-      ebook: { original: 3500, discounted: 2000 },
+      ebook: { original: 3500, discounted: 1000 },
       hardcopy: { original: 6500, discounted: 5000 },
     },
     hardcopyAvailable: true,
@@ -70,7 +70,7 @@ Until you get a copy, you will not know how details this book is. Grab your copy
     title: "THE POWER OF MODERN ENTREPRENEURSHIP",
     author: "Olafusi Omotiba",
     prices: {
-      ebook: { original: 3500, discounted: 2000 },
+      ebook: { original: 3500, discounted: 1000 },
       hardcopy: { original: 6500, discounted: 5000 },
     },
     hardcopyAvailable: true,
@@ -112,7 +112,7 @@ Create a future you respect.`,
     title: "PATHWAYS TO OVERCOME ANXIETY AND DEPRESSION",
     author: "Olafusi Omotiba",
     prices: {
-      ebook: { original: 3500, discounted: 2000 },
+      ebook: { original: 3500, discounted: 1000 },
       hardcopy: { original: 6500, discounted: 5000 },
     },
     hardcopyAvailable: true,
@@ -138,7 +138,7 @@ Until you get a copy, you will not know how detailed this book is. Grab your cop
     title: "PHARMACY POLITICS IN NIGERIA",
     author: "Olafusi Omotiba",
     prices: {
-      ebook: { original: 7000, discounted: 5000 },
+      ebook: { original: 7000, discounted: 1000 },
       hardcopy: { original: 10000, discounted: 8000 },
     },
     hardcopyAvailable: true,
