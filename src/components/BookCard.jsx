@@ -1,89 +1,95 @@
+import { useCart } from "../context/CartContext";
+import { useToast } from "../context/ToastContext";
+import { getEbookPricing } from "../utils/pricing";
+
 export default function BookCard({ book }) {
-  const hasEbook = Boolean(book.prices?.ebook);
+  const { addToCart } = useCart();
+  const { showToast } = useToast();
+  const { hasEbook, finalPrice, originalPrice, discountPercent, isDiscounted } = getEbookPricing(book);
 
-  const originalPrice = hasEbook
-    ? book.prices.ebook.original
-    : null;
-
-  const discountedPrice = hasEbook
-    ? book.prices.ebook.discounted
-    : null;
-
-  const discountPercent =
-    hasEbook && originalPrice
-      ? Math.round(
-          ((originalPrice - discountedPrice) / originalPrice) * 100
-        )
-      : null;
+  const handleAddToCart = () => {
+    addToCart(book);
+    showToast("Book added to cart ✓");
+  };
 
   return (
-    <div className="mt-20 border rounded-2xl p-6 flex flex-col sm:flex-row gap-6 items-start hover:shadow-xl transition-shadow duration-300 bg-white relative">
-      
-      {/* AMAZON BADGE */}
-      {book.amazonLink && (
-        <span className="absolute top-4 right-4 text-xs bg-yellow-400 text-black px-3 py-1 rounded-full font-medium">
-          Amazon
-        </span>
-      )}
+    <div className="bg-card shadow-card border border-gray-100 rounded-2xl overflow-hidden flex flex-col animate-fadeInUp hover:-translate-y-1 hover:shadow-soft transition-all duration-300">
+      {/* Cover */}
+      <div className="overflow-hidden h-56 relative">
+        <img
+          src={book.cover}
+          alt={book.title}
+          className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+        />
+        {isDiscounted && discountPercent && (
+          <span className="absolute top-3 left-3 bg-accent text-white text-xs px-2 py-0.5 rounded-full font-bold">
+            -{discountPercent}%
+          </span>
+        )}
+        {book.amazonLink && (
+          <span className="absolute top-3 right-3 bg-yellow-400 text-black text-xs px-2 py-0.5 rounded-full font-bold">
+            Amazon
+          </span>
+        )}
+      </div>
 
-      {/* Book Cover */}
-      <img
-        src={book.cover}
-        alt={book.title}
-        className="w-32 h-48 object-cover rounded-xl flex-shrink-0"
-      />
+      {/* Content */}
+      <div className="p-5 flex flex-col flex-1 gap-3">
+        <h3 className="font-montserrat font-bold text-heading text-base leading-snug line-clamp-2">
+          {book.title}
+        </h3>
+        <p className="font-inter text-sm text-gray-500 line-clamp-2 flex-1">
+          {book.shortDescription}
+        </p>
 
-      {/* Book Info */}
-      <div className="flex-1 flex flex-col justify-between">
-        <div>
-          <h3 className="font-bold text-2xl mb-2 text-gray-900">
-            {book.title}
-          </h3>
-
-          <p className="text-gray-600 text-base mb-4 leading-relaxed">
-            {book.shortDescription}
+        {/* Price */}
+        {hasEbook && (
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="text-azure font-bold text-lg">
+              ₦{finalPrice.toLocaleString()}
+            </span>
+            {isDiscounted && (
+              <span className="line-through text-gray-400 text-sm">
+                ₦{originalPrice.toLocaleString()}
+              </span>
+            )}
+          </div>
+        )}
+        {!hasEbook && book.amazonLink && (
+          <p className="text-sm text-gray-400 italic">
+            Available in hard copy on Amazon
           </p>
+        )}
 
-          {/* EBOOK PRICE ONLY */}
+        {/* Buttons */}
+        <div className="flex gap-2 flex-wrap mt-auto">
           {hasEbook && (
-            <div className="flex items-center gap-3">
-              <span className="text-red-600 line-through text-sm">
-                ₦{originalPrice} ({discountPercent}% off)
-              </span>
-              <span className="font-semibold text-lg text-gray-800">
-                ₦{discountedPrice}
-              </span>
-            </div>
+            <>
+              <a
+                href={`/book/${book.id}`}
+                className="flex-1 text-center border border-azure text-azure rounded-xl px-4 py-2 font-inter text-sm hover:bg-azure hover:text-white transition-all duration-300"
+              >
+                View Book
+              </a>
+              <button
+                onClick={handleAddToCart}
+                className="flex-1 bg-gradient-to-r from-azure to-primary text-white rounded-xl px-4 py-2 font-inter text-sm hover:scale-105 hover:shadow-soft transition-all duration-300"
+              >
+                Add to Cart
+              </button>
+            </>
           )}
-
-          {/* If NO ebook but Amazon exists */}
           {!hasEbook && book.amazonLink && (
-            <p className="text-sm text-gray-500 italic">
-              Available in hard copy on Amazon
-            </p>
+            <a
+              href={book.amazonLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 text-center bg-yellow-400 text-black rounded-xl px-4 py-2 font-inter text-sm font-semibold hover:bg-yellow-500 transition-colors"
+            >
+              Buy on Amazon
+            </a>
           )}
         </div>
-
-        {/* ACTION BUTTON LOGIC */}
-        {hasEbook ? (
-          /* Ebook exists → Go to details page */
-          <a
-            href={`/book/${book.id}`}
-            className="self-start mt-6 rounded-lg bg-primary text-white px-6 py-3 font-medium text-sm hover:bg-primaryHover transition-colors"
-          >
-            View Book
-          </a>
-        ) : book.amazonLink ? (
-          /* No ebook but Amazon exists → Go to Amazon */
-          <a
-            href={book.amazonLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="self-start mt-6 inline-flex items-center gap-2 rounded-lg bg-yellow-400 text-black px-6 py-3 font-medium text-sm hover:bg-yellow-500 transition-colors"
-          >
-            Buy on Amazon
-          </a>
-        ) : null}
       </div>
     </div>
   );
